@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+
+# Environment Variables File - Contains secrets!
+.env
+
+# Runtime State / Data
+# Stores scheduled deletion information, may contain user-specific paths.
+file_records.json
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE / Editor directories
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional PNPM lockfile
+pnpm-lock.yaml
+
+# Optional Yarn lockfile override (if using resolutions)
+yarn.lock.override
+
+# Build directory (if you ever add a build step)
+/dist
+/build

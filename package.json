@@ -1,0 +1,29 @@
+{
+  "name": "discord-dm-file-browser",
+  "version": "1.1.0",
+  "description": "A Discord bot for browsing and requesting files/folders via DM, with zipping and oversized file handling.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "file",
+    "browser",
+    "dm",
+    "zip",
+    "archiver"
+  ],
+  "author": "Your Name or Alias",
+  "license": "ISC",
+  "dependencies": {
+    "archiver": "^6.0.0",
+    "discord.js": "^14.15.0",
+    "dotenv": "^16.4.0"
+  },
+  "engines": {
+    "node": ">=16.9.0"
+  }
+}
