@@ -12,9 +12,9 @@ An IRC inspired Discord bot designed for browsing files and folders on the host 
 *   **File Sending:** Sends individual files directly if they are under Discord's limit (25MB).
 *   **Folder Zipping:** Zips the contents (files only) of the current directory on demand (`Get Folder (ZIP)` button) and sends the archive.
 *   **Oversized Item Handling (Optional):**
-    *   If a file or generated ZIP exceeds the 25MB limit, it's copied (files) or moved (ZIPs) to a configured temporary location (`FILE_LIMIT_FOLDER`).
+    *   If a file or generated ZIP exceeds the 25MB limit, it's copied (files) or moved (ZIPs) to a configured temporary location (`FILE_LIMIT_FOLDER`). ex. Google Drive
     *   A message notifies the user about the oversized item and the temporary location.
-    *   If a `FILE_SERV_URL` is configured, a static link based on this URL is provided for user access.
+    *   If a `FILE_SERV_URL` is configured, a static link based on this URL is provided for user access. ex. Google Drive
     *   **Requires `FILE_LIMIT_FOLDER` to be set in `.env`.**
 *   **Persistent Auto-Deletion (Optional):**
     *   The *containing folder* created within `FILE_LIMIT_FOLDER` for an oversized item is automatically scheduled for deletion 2 hours after the item was copied/moved.
@@ -101,8 +101,8 @@ An IRC inspired Discord bot designed for browsing files and folders on the host 
 
 *   `DISCORD_BOT_TOKEN` (Required): Your bot's login token.
 *   `FILE_BROWSE_ROOT` (Required): The base directory accessible by the bot. Path traversal outside this root is prevented.
-*   `FILE_LIMIT_FOLDER` (Optional): Path for storing oversized items temporarily. **Enables oversized item handling and 2-hour auto-deletion.** Requires write permissions.
-*   `FILE_SERV_URL` (Optional): Base URL for accessing items in `FILE_LIMIT_FOLDER`. Only useful if `FILE_LIMIT_FOLDER` is set and served by a web server.
+*   `FILE_LIMIT_FOLDER` (Optional): Path for storing oversized items temporarily. **Enables oversized item handling and 2-hour auto-deletion.** Requires write permissions. ex. Google Drive
+*   `FILE_SERV_URL` (Optional): Base URL for accessing items in `FILE_LIMIT_FOLDER`. Only useful if `FILE_LIMIT_FOLDER` is set and served by a web server. ex. Google Drive
 
 ## Persistence
 
