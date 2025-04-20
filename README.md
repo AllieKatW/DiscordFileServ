@@ -1,6 +1,6 @@
-# Discord DM File Browser Bot
+# DiscordFileServ
 
-A Discord bot designed for browsing files and folders on the host server directly through Direct Messages (DMs). It uses interactive messages with buttons for navigation and selection, handling Discord's file size limits by temporarily copying/moving oversized items and providing a static link (if configured) with automatic cleanup.
+An IRC inspired Discord bot designed for browsing files and folders on the host server directly through Direct Messages (DMs). It uses interactive messages with buttons for navigation and selection, handling Discord's file size limits by temporarily copying/moving oversized items and providing a static link (if configured) with automatic cleanup.
 
 ## Features
 
